@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body {
+                background-color: rgba(136, 14, 79, 1);
+                max-width: 900px;
+                margin: 0 auto;
+                font-family: "Arial";
+                color: white;
+                font-size: 25px;
+            }
+            
+            #hi {
+                margin: 50px auto;
+                text-align: center;
+            }
+            
+            #formChoice {
+                display: flex;
+                justify-content: space-around;                
+            }
+            
+            #btn {
+                position: relative;
+                left: 130px;
+                top: 20px;               
+            }
+            
+            .button {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+            
+        </style>
+         
+    </head>
+    <body>
+        
+        <div id="hi">
+            <h1>Hi, Welcome to TravelEasy</h1>
+        </div>
+        
+        <div id="mainDiv">
+            <form action="welcome.jsp" method="GET">
+                <div id="formChoice">
+                    <div>
+                        Source
+                        <select name="src">
+                            <option value='Hari+Nagar+New+Delhi'>Hari Nagar</option>
+                            <option value='Rajouri+Garden+New+Delhi'>Rajouri Garden</option>
+                            <option value='Dhaula+Kuan+New+Delhi'>Dhaula Kuan</option>
+                            <option value='Green+Park+New+Delhi'>Green Park</option>
+                            <option value='Saket+New+Delhi'>Saket</option>
+                            <option value='Satya+Niketan+New+Delhi'>Satyaniketan</option>
+                            <option value='Central+Park+New+Delhi'>CP</option>
+                            <option value='Karol+Bagh+New+Delhi'>Karol Bagh</option>
+                            <option value='Dwarka+New+Delhi'>Dwarka</option>
+                            <option value='Janak+Puri+New+Delhi'>JanakPuri</option>
+                            <option value='Tilak+Nagar+New+Delhi'>Tilak Nagar</option>
+                            <option value='Delhi+Cantt+New+Delhi'>Delhi Cantt</option>
+                        </select>
+                    </div>
+                    <div>
+                        Destination
+                        <select name="dest">
+                            <option value='Hari+Nagar+New+Delhi'>Tilak Nagar</option>
+                            <option value='Rajouri+Garden+New+Delhi'>Rajouri Garden</option>
+                            <option value='Dhaula+Kuan+New+Delhi'>Dhaula Kuan</option>
+                            <option value='Green+Park+New+Delhi'>Green Park</option>
+                            <option value='Saket+New+Delhi'>Saket</option>
+                            <option value='Satya+Niketan+New+Delhi'>Satyaniketan</option>
+                            <option value='Central+Park+New+Delhi'>CP</option>
+                            <option value='Karol+Bagh+New+Delhi'>Karol Bagh</option>
+                            <option value='Dwarka+New+Delhi'>Dwarka</option>
+                            <option value='Janak+Puri+New+Delhi'>JanakPuri</option>
+                            <option value='Tilak+Nagar+New+Delhi'>Hari Nagar</option>
+                            <option value='Delhi+Cantt+New+Delhi'>Delhi Cantt</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div id="btn">
+                    <button type="submit" class="button">Get Fare</button>
+                </div>                      
+            </form>
+        </div>
+    </body>
+</html>
